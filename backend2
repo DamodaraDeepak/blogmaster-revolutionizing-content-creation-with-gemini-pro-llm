@@ -1,0 +1,8 @@
+import random
+
+def get_joke():
+    jokes = [
+        "Why do Python programmers prefer snake_case? Because it's easier to read!",
+        "Why did the AI go to therapy? It had too many unresolved dependencies!",
+    ]
+    return random.choice(jokes)

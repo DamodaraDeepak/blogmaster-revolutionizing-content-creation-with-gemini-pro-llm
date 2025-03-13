@@ -1,0 +1,5 @@
+def generate_blog(topic, word_count):
+    model = genai.GenerativeModel(model_name="gemini-1.5-pro")
+    prompt = f"Write a {word_count}-word blog on {topic} in an engaging style."
+    response = model.generate_content(prompt)
+    return response.text if response else "Error generating blog."
